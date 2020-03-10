@@ -6,14 +6,11 @@ import math
 arduinoSerial = serial.Serial('COM3', 115200, timeout=2)
 print(arduinoSerial.readline())
 
-
-
 previousX = 240
 previousY = 320
 
 minXX = 0
 minYY = 0
-
 
 def detect_faces(cascade, test_image, scaleFactor=1.5):
     global previousX, previousY, minXX, minYY
